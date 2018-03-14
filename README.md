@@ -2,5 +2,5 @@
 Make ion-segment slide for some work
 
 Run:
-> npm i
-> ionic serve
+npm i
+ionic serve
