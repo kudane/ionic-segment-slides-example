@@ -1,0 +1,139 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      Segments
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div #element class="slide" (pan)="pan($event)">
+    <ion-segment [(ngModel)]="no">
+      <ion-segment-button value="1">
+        tab1
+      </ion-segment-button>
+      <ion-segment-button value="2">
+        tab2
+      </ion-segment-button>
+      <ion-segment-button value="3">
+        tab3
+      </ion-segment-button>
+      <ion-segment-button value="4">
+        tab4
+      </ion-segment-button>
+      <ion-segment-button value="5">
+        tab5
+      </ion-segment-button>
+      <ion-segment-button value="6">
+        tab6
+      </ion-segment-button>
+      <ion-segment-button value="7">
+        tab7
+      </ion-segment-button>
+      <ion-segment-button value="8">
+        tab8
+      </ion-segment-button>
+      <ion-segment-button value="9">
+        tab9
+      </ion-segment-button>
+      <ion-segment-button value="10">
+        tab10
+      </ion-segment-button>
+      <ion-segment-button value="11">
+        tab11
+      </ion-segment-button>
+      <ion-segment-button value="12">
+        tab12
+      </ion-segment-button>
+      <ion-segment-button value="13">
+        tab13
+      </ion-segment-button>
+      <ion-segment-button value="14">
+        tab14
+      </ion-segment-button>
+      <ion-segment-button value="15">
+        tab15
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+
+  <div [ngSwitch]="no">
+    <ion-list *ngSwitchCase="'1'">
+      <ion-item>
+        <h2>tab1</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'2'">
+      <ion-item>
+        <h2>tab2</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'3'">
+      <ion-item>
+        <h2>tab3</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'4'">
+      <ion-item>
+        <h2>tab4</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'5'">
+      <ion-item>
+        <h2>tab5</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'6'">
+      <ion-item>
+        <h2>tab6</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'7'">
+      <ion-item>
+        <h2>tab7</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'8'">
+      <ion-item>
+        <h2>tab8</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'9'">
+      <ion-item>
+        <h2>tab9</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'10'">
+      <ion-item>
+        <h2>tab10</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'11'">
+      <ion-item>
+        <h2>tab11</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'12'">
+      <ion-item>
+        <h2>tab12</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'13'">
+      <ion-item>
+        <h2>tab13</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'14'">
+      <ion-item>
+        <h2>tab14</h2>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'15'">
+      <ion-item>
+        <h2>tab15</h2>
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>
